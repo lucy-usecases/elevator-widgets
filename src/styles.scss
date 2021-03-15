@@ -1,0 +1,149 @@
+.lift_widget{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    min-height: 60px;
+    flex-grow: 0; 
+    color: #424242; 
+
+    .uxp-widget-title-bar { 
+        padding: 2px;
+        min-height: 20px; 
+        width: 100%;
+    }
+
+    .car_widget-header{ 
+
+        display: inline-flex;
+        width: 100%;
+        padding: 0px 2em;
+        position: absolute;
+        top: 5%;
+
+    }
+
+
+    .uxp-form-group.showcase-input {
+        width: 100% !important;
+        padding: 0; 
+                .uxp-form-select{ 
+                    position: relative;
+                    .uxp-select-placeholder{  
+                        background-color: #e1e1e161;
+                        color: #424242;
+                        padding: 10px 35px 10px 20px;
+                    }
+                } 
+    } 
+
+    label {
+        color: #424242;
+    }
+
+    .lift_widget_lft {
+        display: inline-block;
+        width: 50%;
+
+        .uxp-form-select {
+            min-width: 100%;
+        }
+
+        .uti-sel-boxes{
+            position: absolute;
+            left: 2em;
+            top: 2em;
+        }
+    }
+
+    .lift_widget_rht { 
+        //display: inline-block;
+        width: 50%;
+        float: right;
+
+        .uxp-form-select {
+            min-width: 100%;
+        }
+        .block_building{
+            float: right;
+            margin-top: 0.7em;
+            font-size: 0.8em;
+            margin-right: 25px;
+        } 
+        .uti-sel-boxes{
+            float: right;
+            margin-bottom: 1em;
+        }
+    }
+ 
+
+    &.lift_widget-details{ 
+        display: inline-block;
+        padding: 0; 
+
+        .lift_details{
+            display: inline-block;
+            width: 100%;
+            height: 96%; 
+
+            .data-grid { 
+                background-color: transparent;
+
+                .data-grid-column { 
+                     border: 0px solid #77777763;
+                    height: 50%;
+
+                    &:nth-child(odd){
+                        border-right: 1px solid #77777763;
+                    }
+
+                    &:first-child{
+                        border-bottom: 1px solid #77777763;
+                    }
+                    &:nth-child(2){
+                        border-bottom: 1px solid #77777763;
+                    }
+                }
+
+                .item-card{
+                    background-color: transparent; 
+                    display: inline-block;
+                   
+                   .item-card-image-container {
+                        position: inherit;
+                        transform: none;
+                        left: 0;
+                        top: 0;
+
+                        .profile-image-container{
+                            background-color: transparent !important;
+                            width: 4em;
+                            height: 4em; 
+                            border-radius: 0; 
+                        }
+                    }
+                    .content{
+                        margin-left: 0;
+                        padding: 5px 0;
+
+                        .title { 
+                            padding: 7px 0 5px 0;
+
+                                h3{
+                                    margin: 0;
+                                    padding: 0;
+                                    font-weight: 500;
+                                    font-size: 1.2em; 
+                                    color: #424242d1;
+                                }
+                                .sub-title { 
+                                    color: #424242d1;
+                                }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+
+}

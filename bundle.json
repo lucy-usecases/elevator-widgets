@@ -1,0 +1,16 @@
+{
+    "id":"4922eceb-919b-4a5f-fa91-1da379a14720",
+    "author":"",
+    "widgets":[
+        {
+            "id":"lift_widget",
+            "title":"lift_widget",
+            "description":"A sample widget"
+        }
+    ],
+    "sidebarLinks":[
+        {
+            "id":"lift_widgetLink"
+        }
+    ]
+}
