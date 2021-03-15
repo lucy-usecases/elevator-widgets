@@ -14,22 +14,25 @@ const Lift_widgetWidget: React.FunctionComponent<IWidgetProps> = (props) => {
     const GridData = [
         {
             icon: "https://static.iviva.com/images/lift_widget/lift-service.svg",
+            name: "Udhaya Kumar",
             title: <h3>90%</h3>,  
             subTitle: "% of lifts in service"
         },
         {
             icon: "https://static.iviva.com/images/lift_widget/waiting-time.svg",
-            // name: "Udhaya Kumar",
+            name: "Udhaya Kumar",
             title: <h3>00:32</h3>,  
             subTitle: " Average waiting time"
         },
         {
             icon: "https://static.iviva.com/images/lift_widget/pop-floor.svg",
+            name: "Udhaya Kumar",
             title: <h3>Floor 12</h3>,
             subTitle: "Most popular floor"  
         },
         {
             icon: "https://static.iviva.com/images/lift_widget/run-hour.svg",
+            name: "Udhaya Kumar",
             title: <h3>104</h3>,
             subTitle: "Lift run hours"  
         }  
@@ -39,9 +42,10 @@ const Lift_widgetWidget: React.FunctionComponent<IWidgetProps> = (props) => {
         return (<ItemCard
             item={item}
             imageField="icon"
+            nameField="name"
             titleField="title"
             subTitleField="subTitle"
-            nameField="name"
+           
         />)
     }
 
@@ -100,7 +104,7 @@ const Lift_widgetWidget: React.FunctionComponent<IWidgetProps> = (props) => {
                     <DataGrid
                         data={GridData}
                         renderItem={renderGridItem}
-                        columns={2}
+                        columns={2} 
                     />
                 </div>
                 
